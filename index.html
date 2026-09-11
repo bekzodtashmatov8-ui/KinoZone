@@ -1,393 +1,448 @@
 <!DOCTYPE html>
-
 <html lang="uz">
-
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-```
-<title>KinoZone — Kinolar olami</title>
+    <title>KinoZone — Kinolar va Seriallar</title>
 
-<meta name="description"
-    content="KinoZone — filmlar va seriallarni bir joyda kashf eting.">
+    <meta
+        name="description"
+        content="KinoZone — kinolar, seriallar, premyeralar va kino yangiliklari."
+    >
 
-<link rel="stylesheet" href="style.css">
-```
+    <meta name="robots" content="index, follow">
 
+    <meta property="og:title" content="KinoZone — Kinolar va Seriallar">
+    <meta
+        property="og:description"
+        content="KinoZone — kinolar, seriallar va premyeralar."
+    >
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
+<header class="header">
 
-```
-<div class="logo">
-    Kino<span>Zone</span>
-</div>
-
-<nav>
-    <a href="index.html">Bosh sahifa</a>
-    <a href="#">Kinolar</a>
-    <a href="#">Seriallar</a>
-    <a href="#">Janrlar</a>
-</nav>
-
-<div class="header-right">
-
-    <div class="search">
-        🔎
-        <input type="text" placeholder="Kino qidirish...">
+    <div class="logo">
+        Kino<span>Zone</span>
     </div>
 
-    <button class="login-btn">
-        Kirish
-    </button>
+    <nav class="nav">
+        <a href="index.html">Bosh sahifa</a>
+        <a href="#movies">Kinolar</a>
+        <a href="#series">Seriallar</a>
+        <a href="#genres">Janrlar</a>
+    </nav>
 
-</div>
-```
+    <div class="header-right">
+
+        <input
+            type="text"
+            class="search"
+            placeholder="Kino qidirish..."
+        >
+
+        <button class="login-btn">
+            Kirish
+        </button>
+
+    </div>
 
 </header>
 
+
 <main>
 
-```
-<!-- HERO -->
+    <!-- HERO -->
 
-<section class="hero">
+    <section class="hero">
 
-    <div class="hero-content">
+        <div class="hero-content">
 
-        <span class="badge">
-            🔥 BUGUN TRENDDA
-        </span>
+            <span class="hero-label">
+                🔥 BUGUN TRENDDA
+            </span>
 
-        <h1>
-            Sevimli kinolaringiz
-            <br>
-            bir joyda
-        </h1>
+            <h1>
+                Sevimli kinolaringiz
+                <br>
+                bir joyda
+            </h1>
 
-        <p>
-            Eng yangi filmlar va seriallarni
-            KinoZone orqali kashf eting.
-        </p>
+            <p>
+                Eng mashhur kinolar va seriallarni
+                KinoZone orqali kashf qiling.
+            </p>
 
-        <div class="hero-buttons">
+            <div class="hero-buttons">
 
-            <a href="movie.html" class="watch-btn">
-                ▶ Ko‘rishni boshlash
+                <a
+                    href="movie.html"
+                    class="watch-btn"
+                >
+                    ▶ Ko‘rishni boshlash
+                </a>
+
+                <a
+                    href="#movies"
+                    class="more-btn"
+                >
+                    Ko‘proq ko‘rish
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MASHHUR KINOLAR -->
+
+    <section
+        class="movies-section"
+        id="movies"
+    >
+
+        <div class="section-title">
+
+            <h2>
+                🔥 Mashhur kinolar
+            </h2>
+
+            <span>
+                Barchasini ko‘rish →
+            </span>
+
+        </div>
+
+
+        <div class="movie-grid">
+
+
+            <!-- INTERSTELLAR -->
+
+            <a
+                href="movie.html"
+                class="movie-card"
+            >
+
+                <div class="movie-poster">
+
+                    <img
+                        src="https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg"
+                        alt="Interstellar"
+                    >
+
+                    <span class="rating">
+                        ⭐ 8.7
+                    </span>
+
+                </div>
+
+                <div class="movie-info">
+
+                    <h3>
+                        Interstellar
+                    </h3>
+
+                    <p>
+                        2014 • Fantastika
+                    </p>
+
+                </div>
+
             </a>
 
-            <button class="info-btn">
-                ⓘ Batafsil
-            </button>
 
-        </div>
+            <!-- INCEPTION -->
 
-    </div>
+            <a
+                href="movie.html"
+                class="movie-card"
+            >
 
-</section>
+                <div class="movie-poster">
 
-
-<!-- MASHHUR KINOLAR -->
-
-<section class="movies">
-
-    <div class="section-title">
-
-        <h2>🔥 Mashhur kinolar</h2>
-
-        <a href="#">
-            Barchasini ko‘rish →
-        </a>
-
-    </div>
-
-
-    <div class="movie-list">
-
-        <!-- INTERSTELLAR -->
-
-        <a href="movie.html" class="movie-link">
-
-            <div class="movie-card">
-
-                <div class="movie-img movie1">
-
-                    <span class="quality">HD</span>
-                    <span class="play">▶</span>
-
-                </div>
-
-                <div class="movie-info">
-
-                    <h3>Interstellar</h3>
-
-                    <p>2014 • Fantastika</p>
-
-                    <div class="rating">
-                        ⭐ 8.7
+                    <div class="poster-placeholder">
+                        🎬
                     </div>
 
-                </div>
-
-            </div>
-
-        </a>
-
-
-        <!-- INCEPTION -->
-
-        <a href="movie.html" class="movie-link">
-
-            <div class="movie-card">
-
-                <div class="movie-img movie2">
-
-                    <span class="quality">4K</span>
-                    <span class="play">▶</span>
-
-                </div>
-
-                <div class="movie-info">
-
-                    <h3>Inception</h3>
-
-                    <p>2010 • Triller</p>
-
-                    <div class="rating">
+                    <span class="rating">
                         ⭐ 8.8
-                    </div>
-
-                </div>
-
-            </div>
-
-        </a>
-
-
-        <!-- DARK KNIGHT -->
-
-        <a href="movie.html" class="movie-link">
-
-            <div class="movie-card">
-
-                <div class="movie-img movie3">
-
-                    <span class="quality">HD</span>
-                    <span class="play">▶</span>
+                    </span>
 
                 </div>
 
                 <div class="movie-info">
 
-                    <h3>The Dark Knight</h3>
+                    <h3>
+                        Inception
+                    </h3>
 
-                    <p>2008 • Jangari</p>
+                    <p>
+                        2010 • Triller
+                    </p>
 
-                    <div class="rating">
+                </div>
+
+            </a>
+
+
+            <!-- DARK KNIGHT -->
+
+            <a
+                href="movie.html"
+                class="movie-card"
+            >
+
+                <div class="movie-poster">
+
+                    <div class="poster-placeholder">
+                        🦇
+                    </div>
+
+                    <span class="rating">
                         ⭐ 9.0
-                    </div>
-
-                </div>
-
-            </div>
-
-        </a>
-
-
-        <!-- AVENGERS -->
-
-        <a href="movie.html" class="movie-link">
-
-            <div class="movie-card">
-
-                <div class="movie-img movie4">
-
-                    <span class="quality">4K</span>
-                    <span class="play">▶</span>
+                    </span>
 
                 </div>
 
                 <div class="movie-info">
 
-                    <h3>Avengers</h3>
+                    <h3>
+                        The Dark Knight
+                    </h3>
 
-                    <p>2019 • Fantastika</p>
-
-                    <div class="rating">
-                        ⭐ 8.4
-                    </div>
+                    <p>
+                        2008 • Jangari
+                    </p>
 
                 </div>
 
-            </div>
-
-        </a>
-
-    </div>
-
-</section>
+            </a>
 
 
-<!-- TEZ KUNDA -->
+            <!-- AVENGERS -->
 
-<section class="premieres">
+            <a
+                href="movie.html"
+                class="movie-card"
+            >
 
-    <div class="section-title">
+                <div class="movie-poster">
 
-        <h2>🔥 Tez kunda</h2>
+                    <div class="poster-placeholder">
+                        🦸
+                    </div>
 
-        <span>Premyera seriallar</span>
+                    <span class="rating">
+                        ⭐ 8.4
+                    </span>
 
-    </div>
+                </div>
+
+                <div class="movie-info">
+
+                    <h3>
+                        Avengers
+                    </h3>
+
+                    <p>
+                        2019 • Fantastika
+                    </p>
+
+                </div>
+
+            </a>
+
+        </div>
+
+    </section>
 
 
-    <div class="dexter-premiere">
+    <!-- DEXTER PREMIERA -->
 
+    <section
+        class="premieres"
+        id="series"
+    >
 
-        <!-- DEXTER RASM -->
+        <div class="section-title">
 
-        <div class="dexter-poster">
+            <h2>
+                🔥 Tez kunda
+            </h2>
 
-            <img
-                src="dexter2.jpg"
-                alt="Dexter Resurrection 2-fasl">
-
-            <div class="coming-soon">
-                TEZ KUNDA
-            </div>
+            <span>
+                Premyera seriallar
+            </span>
 
         </div>
 
 
-        <!-- DEXTER MA'LUMOT -->
+        <div class="dexter-premiere">
 
-        <div class="dexter-info">
 
-            <span class="premiere-label">
-                🔥 PREMYERA
+            <div class="dexter-poster">
+
+                <img
+                    src="dexter2.jpg"
+                    alt="Dexter Resurrection 2-fasl"
+                >
+
+                <div class="coming-soon">
+                    TEZ KUNDA
+                </div>
+
+            </div>
+
+
+            <div class="dexter-info">
+
+                <span class="premiere-label">
+                    🔥 PREMYERA
+                </span>
+
+                <h2>
+                    Dexter: Resurrection
+                </h2>
+
+                <h3>
+                    2-FASL
+                </h3>
+
+                <p>
+                    Dexter Morgan yana qaytmoqda.
+                    Dexter: Resurrection serialining
+                    2-fasli tez orada KinoZone'da!
+                </p>
+
+
+                <div class="dexter-meta">
+
+                    <span>
+                        🎬 Serial
+                    </span>
+
+                    <span>
+                        📅 30 Oktabr 2026
+                    </span>
+
+                    <span>
+                        ⭐ 2-FASL
+                    </span>
+
+                </div>
+
+
+                <button class="notify-btn">
+                    🔔 Kutish
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- JANRLAR -->
+
+    <section
+        class="genres-section"
+        id="genres"
+    >
+
+        <div class="section-title">
+
+            <h2>
+                🎬 Janrlar
+            </h2>
+
+        </div>
+
+
+        <div class="genres">
+
+            <div class="genre">
+                🔫 Jangari
+            </div>
+
+            <div class="genre">
+                😂 Komediya
+            </div>
+
+            <div class="genre">
+                👻 Qo‘rqinchli
+            </div>
+
+            <div class="genre">
+                🚀 Fantastika
+            </div>
+
+            <div class="genre">
+                ❤️ Romantika
+            </div>
+
+            <div class="genre">
+                🔪 Triller
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PREMIUM -->
+
+    <section class="premium">
+
+        <div class="premium-content">
+
+            <span>
+                💎 KINOZONE PREMIUM
             </span>
 
             <h2>
-                Dexter: Resurrection
+                Cheksiz kino tomosha qiling
             </h2>
 
-            <h3>
-                2-FASL
-            </h3>
-
             <p>
-                Dexter Morgan yana qaytmoqda.
-                Dexter: Resurrection serialining
-                2-fasli tez orada KinoZone'da!
+                Reklamalarsiz kino va seriallardan
+                zavqlaning.
             </p>
 
-            <div class="dexter-meta">
-
-                <span>🎬 Serial</span>
-
-                <span>📅 30 Oktabr 2026</span>
-
-                <span>⭐ 2-FASL</span>
-
-            </div>
-
-            <button class="notify-btn">
-                🔔 Kutish
+            <button class="premium-btn">
+                Obuna bo‘lish →
             </button>
 
         </div>
 
-    </div>
-
-</section>
-
-
-<!-- JANRLAR -->
-
-<section class="categories">
-
-    <h2>🎬 Janrlar</h2>
-
-    <div class="category-list">
-
-        <div class="category">
-            🔫 Jangari
-        </div>
-
-        <div class="category">
-            😂 Komediya
-        </div>
-
-        <div class="category">
-            👻 Qo‘rqinchli
-        </div>
-
-        <div class="category">
-            🚀 Fantastika
-        </div>
-
-        <div class="category">
-            ❤️ Romantika
-        </div>
-
-        <div class="category">
-            🕵️ Triller
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- PREMIUM -->
-
-<section class="premium">
-
-    <div>
-
-        <span class="premium-label">
-            💎 KINOZONE PREMIUM
-        </span>
-
-        <h2>
-            Cheksiz kino tomosha qiling
-        </h2>
-
-        <p>
-            Reklamalarsiz tomosha qiling va
-            Premium kontentlardan foydalaning.
-        </p>
-
-    </div>
-
-    <button class="premium-btn">
-        Obuna bo‘lish →
-    </button>
-
-</section>
-```
+    </section>
 
 </main>
 
-<!-- FOOTER -->
 
-<footer>
+<footer class="footer">
 
-```
-<div class="logo">
-    Kino<span>Zone</span>
-</div>
+    <div class="logo">
+        Kino<span>Zone</span>
+    </div>
 
-<p>
-    © 2026 KinoZone. Barcha huquqlar himoyalangan.
-</p>
-```
+    <p>
+        © 2026 KinoZone. Barcha huquqlar himoyalangan.
+    </p>
 
 </footer>
 
-</body>
 
+<script src="script.js"></script>
+
+</body>
 </html>
